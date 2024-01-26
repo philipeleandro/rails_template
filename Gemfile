@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
 ruby "3.2.2"
@@ -18,21 +20,30 @@ gem "stimulus-rails"
 
 gem "jbuilder"
 
-gem "tzinfo-data", platforms: %i[ windows jruby ]
+gem "tzinfo-data", platforms: %i[windows jruby]
 
 gem "bootsnap", require: false
 
-gem 'pry', '~> 0.14.2'
+gem "pry", "~> 0.14.2"
 
-gem 'pry-remote', '~> 0.1.8'
+gem "pry-remote", "~> 0.1.8"
 
 group :development, :test do
-  gem 'rspec-rails', '~> 6.1.0'
+  gem "rspec-rails", "~> 6.1.0"
 
-  gem "debug", platforms: %i[ mri windows ]
+  gem "debug", platforms: %i[mri windows]
+
+  gem "rubocop", "~> 1.60", require: false
+
+  gem "rubocop-graphql", "~> 1.4"
+
+  gem "rubocop-performance", "1.19.0"
+
+  gem "rubocop-rails", "2.20.2"
+
+  gem "rubocop-rspec", "2.23.2"
 end
 
 group :development do
   gem "web-console"
 end
-
