@@ -90,6 +90,7 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
+    docile (1.4.0)
     drb (2.1.1)
       ruby2_keywords
     erubi (1.12.0)
@@ -254,11 +255,19 @@ GEM
       rubocop-factory_bot (~> 2.22)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
+    shoulda-matchers (6.2.0)
+      activesupport (>= 5.2.0)
     sidekiq (7.2.4)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
       redis-client (>= 0.19.0)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.4)
     slop (3.6.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
@@ -312,7 +321,9 @@ DEPENDENCIES
   rubocop-performance (= 1.19.0)
   rubocop-rails (= 2.20.2)
   rubocop-rspec (= 2.23.2)
+  shoulda-matchers (~> 6.0)
   sidekiq
+  simplecov
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
