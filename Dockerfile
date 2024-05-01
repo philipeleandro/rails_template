@@ -3,7 +3,7 @@ ARG RUBY_VERSION=3.2.2
 FROM ruby:${RUBY_VERSION}-slim as base
 
 # Rails app lives here
-WORKDIR /rails
+WORKDIR /app
 
 # Throw-away build stage to reduce size of final image
 FROM base as build

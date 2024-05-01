@@ -50,6 +50,8 @@ group :development, :test do
   gem "rubocop-rspec", "2.23.2"
 
   gem "factory_bot_rails"
+
+  gem 'devise'
 end
 
 group :development do
