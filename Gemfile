@@ -34,6 +34,8 @@ gem "redis"
 
 gem "sidekiq"
 
+gem "devise"
+
 group :development, :test do
   gem "rspec-rails", "~> 6.1.0"
 
@@ -50,8 +52,6 @@ group :development, :test do
   gem "rubocop-rspec", "2.23.2"
 
   gem "factory_bot_rails"
-
-  gem 'devise'
 end
 
 group :development do
